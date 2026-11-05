@@ -1,8 +1,13 @@
-### General
+<div align="center">
+  <img src="img/Laboratory-Meow.png" alt="Meow Machine" width="400">
+</div>
 
-Difficulty: Very Easy
-OS: Linux
-Task: Get on the target network
+### Decription
+
+- Difficulty: Easy
+- OS: Linux
+- Task: Get on the target network
+
 ### About:
 
 Meow is a very easy Linux machine which guides players on setting up their attacking machines, connecting to HTB labs via VPN and demonstrates the strategy of how to complete them. The machine focuses on beginner enumeration techniques and showcases the exploitation of a vulnerable Telnet service through default credentials.
@@ -15,7 +20,7 @@ I first entered the terminal, and used nmap to scan all the ports in the victim'
 
 Result of the scan:
 
-![[Pasted image 20260622094749.png]]
+<img src="img/Pasted%20image%2020260622094749.png" alt="Meow Machine" width="400">
 
 I used the parameters -Pn and -F to improve the process:
 
@@ -25,9 +30,8 @@ I used the parameters -Pn and -F to improve the process:
 
 The report made by nmap shows that there's a service running in the port 23/tcp. So know that I know that I proceed to use the telnet tool to access that port:
 
-![[Pasted image 20260622101350.png]]
+<img src="img/Pasted%20image%2020260622101350.png" alt="Acceso por Telnet" width="400">
 
 After I provided the default credentials it granted me access, which I used to launch an ls command and see the files inside the machine. Finding the flag.txt file. I entered cat flag.txt to see the content of it, and got the flag:
 
-![[Pasted image 20260622103517.png]]
-
+<img src="img/Pasted%20image%2020260622103517.png" alt="Bandera capturada" width="400">
